@@ -1,0 +1,15 @@
+/*
+
+  Light green: #ffe259
+  Medium green: #55c57a
+  Dark green: #ffa751
+*/
+
+.header {
+  height: 96vh;
+  background-image: linear-gradient(to right bottom, #ffe359b5, #ffa851b5), url(/assets/img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
