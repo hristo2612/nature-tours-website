@@ -7,7 +7,7 @@
 
 .header {
   height: 96vh;
-  background-image: linear-gradient(to right bottom, #ffe359b5, #ffa851b5), url(/assets/img/hero.jpg);
+  background-image: linear-gradient(to right, #12c2e9cf, #c471edcd, #f64f5acd), url(/assets/img/hero.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -23,4 +23,31 @@
 
 .logo {
   height: 35px;
+}
+
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // text-align: center;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 35px;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 17.4px;
 }
