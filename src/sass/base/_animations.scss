@@ -1,0 +1,42 @@
+@keyframes fadeInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes btnAfter {
+  from {
+    transform: scaleX(1) scaleY(1);
+    opacity: 1;
+  }
+  to {
+    transform: scaleX(1.5) scaleY(1.7);
+    opacity: 0;
+  }
+}
+
+@keyframes btnHoverAfter {
+  from {
+    transform: scaleX(1) scaleY(1);
+    opacity: 1;
+  }
+  to {
+    transform: scaleX(1.5) scaleY(1.7);
+    opacity: 0;
+  }
+}

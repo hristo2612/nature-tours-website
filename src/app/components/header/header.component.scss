@@ -1,13 +1,5 @@
-/*
-  Color Main: #12c2e9cf
-  Color Tertiary: #c471edcd
-  Color Secondary: #f64f5acd
-*/
-
-$color-main: #12c2e9cf;
-$color-tertiary: #c471edcd;
-$color-secondary: #f64f5acd;
-$color-white: #ffffff;
+@import "../../../sass/abstracts/variables";
+@import "../../../sass/base/animations";
 
 .header {
   height: 96vh;
@@ -57,17 +49,5 @@ $color-white: #ffffff;
     letter-spacing: 1.5rem;
     opacity: 0;
     animation: fadeInFromTop 0.7s 0.5s ease-out forwards;
-  }
-}
-
-@keyframes fadeInFromTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-3rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
