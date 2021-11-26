@@ -60,16 +60,16 @@ body {
   animation: btnHoverAfter 0.4s forwards;
 }
 
-.btn-white {
+.btn--white {
   background-color: #fff;
   color: #777;
 }
 
-.btn-white::after {
+.btn--white::after {
   background-color: #fff;
 }
 
-.btn-animated {
+.btn--animated {
   animation: fadeIn 0.7s 1.2s backwards;
 }
 
