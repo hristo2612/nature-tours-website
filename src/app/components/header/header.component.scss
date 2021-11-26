@@ -1,13 +1,17 @@
 /*
-
-  Light green: #ffe259
-  Medium green: #55c57a
-  Dark green: #ffa751
+  Color Main: #12c2e9cf
+  Color Tertiary: #c471edcd
+  Color Secondary: #f64f5acd
 */
+
+$color-main: #12c2e9cf;
+$color-tertiary: #c471edcd;
+$color-secondary: #f64f5acd;
+$color-white: #ffffff;
 
 .header {
   height: 96vh;
-  background-image: linear-gradient(to right, #12c2e9cf, #c471edcd, #f64f5acd), url(../../../assets/img/hero.jpg);
+  background-image: linear-gradient(to right, $color-main, $color-tertiary, $color-secondary), url(../../../assets/img/hero.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -34,7 +38,7 @@
 }
 
 .heading-primary {
-  color: #fff;
+  color: $color-white;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 5rem;
