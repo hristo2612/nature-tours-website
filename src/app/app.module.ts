@@ -7,6 +7,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './components/main/main.component';
 import { ImageShowcaseComponent } from './components/image-showcase/image-showcase.component';
+import { AboutSectionComponent } from './components/main/components/about-section/about-section.component';
+import { FeaturesSectionComponent } from './components/main/components/features-section/features-section.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ImageShowcaseComponent } from './components/image-showcase/image-showca
     HomeComponent,
     HeaderComponent,
     MainComponent,
-    ImageShowcaseComponent
+    ImageShowcaseComponent,
+    AboutSectionComponent,
+    FeaturesSectionComponent
   ],
   imports: [
     BrowserModule,
