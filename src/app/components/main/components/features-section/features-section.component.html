@@ -1,1 +1,13 @@
-<p>features-section works!</p>
+<section class="section-features">
+  <div class="row">
+    <div *ngFor="let feature of features;" class="col-1-of-4">
+      <div class="feature-card">
+        <i class="feature-card__icon" [ngClass]="feature.iconClass"></i>
+        <h3 class="heading-tertiary u-margin-bottom-1">{{feature.title}}</h3>
+        <p class="feature-card__text">
+          {{feature.description}}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

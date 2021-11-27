@@ -1,0 +1,14 @@
+@import "../../../../../sass/abstracts/variables";
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right, $color-main, $color-tertiary, $color-secondary), url(../../../../../assets/img/nat-4.jpg);
+  background-size: cover;
+  margin-top: -15rem;
+
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
