@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ImageShowcaseComponent implements OnInit {
 
+  images: string[] = [
+    '/assets/img/nat-1-large.jpg',
+    '/assets/img/nat-2-large.jpg',
+    '/assets/img/nat-3-large.jpg'
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
