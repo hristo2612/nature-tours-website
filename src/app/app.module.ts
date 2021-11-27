@@ -10,6 +10,7 @@ import { ImageShowcaseComponent } from './components/image-showcase/image-showca
 import { AboutSectionComponent } from './components/main/components/about-section/about-section.component';
 import { FeaturesSectionComponent } from './components/main/components/features-section/features-section.component';
 import { ToursSectionComponent } from './components/main/components/tours-section/tours-section.component';
+import { StoriesSectionComponent } from './components/main/components/stories-section/stories-section.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ToursSectionComponent } from './components/main/components/tours-sectio
     ImageShowcaseComponent,
     AboutSectionComponent,
     FeaturesSectionComponent,
-    ToursSectionComponent
+    ToursSectionComponent,
+    StoriesSectionComponent
   ],
   imports: [
     BrowserModule,
