@@ -4,4 +4,17 @@
       Most popular tours
     </h2>
   </div>
+
+  <div class="row">
+    <div *ngFor="let tour of tours; let i = index;" class="col-1-of-3">
+      <div class="card">
+        <div class="card__side card__side--front">
+          FRONT
+        </div>
+        <div class="card__side card__side--back" [ngClass]="'card__side--back-' + i">
+          BACK
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
