@@ -8,9 +8,39 @@ import { Component, OnInit } from '@angular/core';
 export class ToursSectionComponent implements OnInit {
 
   tours: any[] = [
-    {},
-    {},
-    {}
+    {
+      title: 'The Sea Explorer',
+      price: 299,
+      list: [
+        '3 day tour',
+        'Up to 30 people',
+        '2 tour guides',
+        'Sleep in cozy hotels',
+        'Difficulty: Easy'
+      ]
+    },
+    {
+      title: 'The Forest Hiker',
+      price: 499,
+      list: [
+        '7 day tour',
+        'Up to 40 people',
+        '6 tour guides',
+        'Sleep in provided tents',
+        'Difficulty: Medium'
+      ]
+    },
+    {
+      title: 'The Snow Adventurer',
+      price: 999,
+      list: [
+        '5 day tour',
+        'Up to 15 people',
+        '3 tour guides',
+        'Sleep in provided tents',
+        'Difficulty: Hard'
+      ]
+    }
   ]
 
   constructor() { }

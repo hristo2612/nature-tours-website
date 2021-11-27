@@ -1,6 +1,7 @@
 // Colors
 $color-white: #fff;
 $color-grey: #777;
+$color-solid-grey: #eee;
 $color-black: #000;
 
 $color-grey-white-1: #f7f7f7;
@@ -9,7 +10,9 @@ $color-main: #12c2e9cf;
 $color-tertiary: #c471edcd;
 $color-secondary: #f64f5acd;
 
-$color-tertiary-dark: darken($color-tertiary, 15%);
+$color-main-dark: #0da7c9cf;
+$color-tertiary-dark: #a85acecd;
+$color-secondary-dark: #d83f49cd;
 
 // Grid
 

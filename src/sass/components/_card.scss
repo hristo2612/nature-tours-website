@@ -2,16 +2,16 @@
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem;
+  height: 53rem;
 
   &__side {
-    color: $color-white;
-    height: 50rem;
+    height: 53rem;
     transition: all 0.8s ease;
     position: absolute;
     width: 100%;
     backface-visibility: hidden;
     border-radius: 0.5rem;
+    overflow: hidden;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
 
     &--front {
@@ -41,5 +41,99 @@
 
   &:hover &__side--back {
     transform: rotateY(0);
+  }
+
+  // FRONT SIDE STYLING
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    &--0 {
+      background-image: linear-gradient(to right bottom, $color-main, darken($color-main, 20%)), url(../../assets/img/nat-5.jpg);
+    }
+
+    &--1 {
+      background-image: linear-gradient(to right bottom, $color-tertiary, darken($color-tertiary, 20%)), url(../../assets/img/nat-6.jpg);
+    }
+
+    &--2 {
+      background-image: linear-gradient(to right bottom, $color-secondary, darken($color-secondary, 20%)), url(../../assets/img/nat-7.jpg);
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    text-align: right;
+    width: 70%;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    box-decoration-break: clone;
+
+    &--0 {
+      background-image: linear-gradient(to right bottom, $color-main, $color-main-dark);
+    }
+
+    &--1 {
+      background-image: linear-gradient(to right bottom, $color-tertiary, $color-tertiary-dark);
+    }
+
+    &--2 {
+      background-image: linear-gradient(to right bottom, $color-secondary, $color-secondary-dark);
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+    
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+      
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-solid-grey;
+        }
+      }
+    }
+  }
+
+  // BACK SIDE STYLING
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__price-box {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+
+  &__price-only {
+    font-size: 1.6rem;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
   }
 }

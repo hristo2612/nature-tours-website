@@ -47,6 +47,15 @@
     }
   }
 
+  &--colourful {
+    background-image: linear-gradient(to right, $color-main, $color-tertiary, $color-secondary);
+    color: $color-white;
+
+    &::after {
+      background-image: linear-gradient(to right, $color-main, $color-tertiary, $color-secondary);
+    }
+  }
+
   &--animated {
     animation: fadeIn 0.7s 1.2s backwards;
   }
