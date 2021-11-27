@@ -9,6 +9,7 @@ import { MainComponent } from './components/main/main.component';
 import { ImageShowcaseComponent } from './components/image-showcase/image-showcase.component';
 import { AboutSectionComponent } from './components/main/components/about-section/about-section.component';
 import { FeaturesSectionComponent } from './components/main/components/features-section/features-section.component';
+import { ToursSectionComponent } from './components/main/components/tours-section/tours-section.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FeaturesSectionComponent } from './components/main/components/features-
     MainComponent,
     ImageShowcaseComponent,
     AboutSectionComponent,
-    FeaturesSectionComponent
+    FeaturesSectionComponent,
+    ToursSectionComponent
   ],
   imports: [
     BrowserModule,
