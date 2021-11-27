@@ -11,6 +11,7 @@ import { AboutSectionComponent } from './components/main/components/about-sectio
 import { FeaturesSectionComponent } from './components/main/components/features-section/features-section.component';
 import { ToursSectionComponent } from './components/main/components/tours-section/tours-section.component';
 import { StoriesSectionComponent } from './components/main/components/stories-section/stories-section.component';
+import { BgVideoComponent } from './components/bg-video/bg-video.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { StoriesSectionComponent } from './components/main/components/stories-se
     AboutSectionComponent,
     FeaturesSectionComponent,
     ToursSectionComponent,
-    StoriesSectionComponent
+    StoriesSectionComponent,
+    BgVideoComponent
   ],
   imports: [
     BrowserModule,

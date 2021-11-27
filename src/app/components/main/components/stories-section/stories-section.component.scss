@@ -1,0 +1,12 @@
+@import "../../../../../sass/abstracts/variables";
+
+.section-stories {
+  padding: 15rem 0;
+  position: relative;
+  
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
