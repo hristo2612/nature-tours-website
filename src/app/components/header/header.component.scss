@@ -6,6 +6,8 @@
   background-image: linear-gradient(to right, $color-main, $color-tertiary, $color-secondary), url(../../../assets/img/hero.jpg);
   background-size: cover;
   background-position: top;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
