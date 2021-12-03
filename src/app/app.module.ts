@@ -15,6 +15,7 @@ import { BgVideoComponent } from './components/bg-video/bg-video.component';
 import { BookingSectionComponent } from './components/main/components/booking-section/booking-section.component';
 import { FormComponent } from './components/form/form.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FooterComponent } from './components/footer/footer.component';
     BgVideoComponent,
     BookingSectionComponent,
     FormComponent,
-    FooterComponent
+    FooterComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
