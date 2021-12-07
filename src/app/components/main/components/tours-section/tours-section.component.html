@@ -29,7 +29,7 @@
               <p class="card__price-only">Only</p>
               <p class="card__price-value">${{ tour.price }}</p>
             </div>
-            <a href="#" class="btn btn--white">Book now!</a>
+            <a (click)="popupVisible = true;" class="btn btn--white">Book now!</a>
           </div>
         </div>
       </div>
@@ -40,3 +40,5 @@
     <a href="#" class="btn btn--colourful">Discover all tours</a>
   </div>
 </section>
+
+<app-popup *ngIf="popupVisible" (closePopup)="onClosePopup($event)"></app-popup>

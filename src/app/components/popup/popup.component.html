@@ -1,0 +1,20 @@
+<div class="popup" [ngClass]="{ 'popup__hide': hidePopup }">
+	<div class="popup__left">
+		<img src="assets/img/nat-8.jpg" class="popup__img" alt="Tour image">
+		<img src="assets/img/nat-9.jpg" class="popup__img" alt="Tour image">
+	</div>
+	<div class="popup__right">
+		<div class="popup__close" (click)="onClose()">&times;</div>
+		<h2 class="heading-secondary u-margin-bottom-2">Start Booking Now</h2>
+		<h3 class="heading-tertiary u-margin-bottom-1">Important &ndash; Please read these terms before booking</h3>
+		<p class="popup__text">
+			In order to book a tour, you must agree to the following terms and conditions.
+			Every booking is subject to availability. We reserve the right to cancel any booking without any prior notice.
+			Do not book a tour if you are under the age of 18. We do not accept cash, credit cards, or checks.
+			We reserve the right to cancel any booking without any prior notice.
+		</p>
+		<a href="#" class="btn btn--colourful">Book now</a>
+	</div>
+</div>
+
+<div class="popup-overlay"></div>

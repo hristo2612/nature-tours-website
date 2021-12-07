@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToursSectionComponent implements OnInit {
 
+  popupVisible: boolean = false;
+
   tours: any[] = [
     {
       title: 'The Sea Explorer',
@@ -44,6 +46,10 @@ export class ToursSectionComponent implements OnInit {
   ]
 
   constructor() { }
+
+  onClosePopup(close: boolean) {
+    this.popupVisible = !close;
+  }
 
   ngOnInit(): void {
   }
