@@ -10,6 +10,20 @@
   transform: skewX(-12deg);
   backface-visibility: hidden;
 
+  @include respond(small-phone, phone, tablet) {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+
+  @include respond(small-phone, phone) {
+    transform: skew(0);
+  }
+
+  @include respond(small-phone) {
+    padding-left: 4rem !important;
+  }
+
   &__shape {
     position: relative;
     width: 15rem;
@@ -20,6 +34,17 @@
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     overflow: hidden;
+
+    @include respond(small-phone) {
+      shape-outside: none;
+      float: none;
+      left: 50%;
+      transform: translateX(-50%) skew(0) !important;
+    }
+
+    @include respond(small-phone, phone, tablet) {
+      transform: translateX(-3rem) skew(0);
+    }
   }
 
   &__image {
@@ -30,6 +55,14 @@
 
   &__text {
     transform: skewX(12deg);
+
+    @include respond(small-phone) {
+      margin-top: 4rem;
+    }
+
+    @include respond(small-phone, phone, tablet) {
+      transform: skew(0);
+    }
   }
 
   &__caption {

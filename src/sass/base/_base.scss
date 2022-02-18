@@ -9,7 +9,7 @@
 html {
   font-size: 62.5%;
 
-  @include respond(phone) {
+  @include respond(small-phone, phone) {
     font-size: 50%;
   }
 
@@ -42,4 +42,8 @@ body {
   color: $color-grey;
   padding: 3rem;
   box-sizing: border-box;
+
+  @include respond(small-phone, phone, tablet) {
+    padding: 0;
+  }
 }

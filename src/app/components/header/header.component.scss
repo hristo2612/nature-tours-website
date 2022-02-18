@@ -1,5 +1,6 @@
 @import "../../../sass/abstracts/variables";
 @import "../../../sass/base/animations";
+@import "../../../sass/abstracts/mixins";
 
 .header {
   height: 96vh;
@@ -10,6 +11,10 @@
   border-top-right-radius: 0.5rem;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  @include respond(small-phone, phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
 
   &__logo-box {
     position: absolute;

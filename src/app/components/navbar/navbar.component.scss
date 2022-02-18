@@ -1,4 +1,5 @@
 @import "../../../sass/abstracts/variables";
+@import "../../../sass/abstracts/mixins";
 
 .navbar {
     &__checkbox {
@@ -24,6 +25,16 @@
 			background-image: radial-gradient(rgba($color-secondary, 1), rgba($color-tertiary, 1));
 			z-index: 1000;
 			transition: transform 0.5s ease-in-out;
+
+			@include respond(small-phone, phone) {
+				top: 3.5rem;
+				right: 3.5rem;
+			}
+
+			@include respond(tablet) {
+				top: 4.5rem;
+				right: 4.5rem;
+			}
     }
 
 		&__button {
@@ -38,6 +49,16 @@
 			box-shadow: 0 1rem 4rem rgba($color-black, 0.2);
 			text-align: center;
 			cursor: pointer;
+
+			@include respond(small-phone, phone) {
+				top: 3rem;
+				right: 3rem;
+			}
+
+			@include respond(tablet) {
+				top: 4rem;
+				right: 4rem;
+			}
 		}
 
     &__nav {
