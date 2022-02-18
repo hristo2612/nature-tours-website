@@ -5,3 +5,34 @@
     clear: both;
   }
 }
+
+// Media query manager
+/*
+  0-600px: mobile
+  600-960px: tablet
+  960-1200px: desktop
+  1200-1440px: large desktop
+  1440-1800px: xlarge desktop
+  1800-2400px: xxlarge desktop
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) { @content; }
+  }
+  @if $breakpoint == tablet {
+    @media (min-width: 37.5em) and (max-width: 60em) { @content; }
+  }
+  @if $breakpoint == desktop {
+    @media (min-width: 60em) and (max-width: 75em) { @content; }
+  }
+  @if $breakpoint == large-desktop {
+    @media (min-width: 75em) and (max-width: 90em) { @content; }
+  }
+  @if $breakpoint == xlarge-desktop {
+    @media (min-width: 90em) and (max-width: 112.5em) { @content; }
+  }
+  @if $breakpoint == xxlarge-desktop {
+    @media (min-width: 112.5em) { @content; }
+  }
+}
