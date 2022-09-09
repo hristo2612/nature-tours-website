@@ -1,5 +1,7 @@
 # Nature Tours Website
 
+<h2>Check out the ready version of the website <a href="https://hristo2612.github.io/nature-tours-website">HERE</a></h2>
+
 This project is solely for learning purposes.
 
 ## Advanced CSS/SCSS course
@@ -18,7 +20,3 @@ Install using npm `npm i`
 
 Run `npm start` or `ng serve` inside the directory once all packages have been installed.
 That's it!
-
-
-
-<h2>Check out the ready version of the website <a href="https://hristo2612.github.io/nature-tours-website">HERE</a></h2>
