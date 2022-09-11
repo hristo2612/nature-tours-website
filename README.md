@@ -20,3 +20,4 @@ Install using npm `npm i`
 
 Run `npm start` or `ng serve` inside the directory once all packages have been installed.
 That's it!
+
